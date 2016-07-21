@@ -1,0 +1,222 @@
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  </head>
+  <style type="text/css">
+  	@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+div > img{box-shadow: 10px 10px 5px #888888;}
+  .to > img{margin:20px;}
+  .to > a >img{margin:3%;}
+  body{position: absolute;
+	top: 0px;
+	left: -20px;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height: auto;
+	background-image:url(Images/JAN11_Top_Docs_6.jpg);
+	background-size: cover;
+	z-index: 0;
+	background-repeat:no-repeat;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  #main {
+    flex: 1 0 auto;
+  }
+	.header1{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 455px);
+	z-index: 2;
+}
+
+.header1 div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header1 div span{
+	color:#000000;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 12%);
+	left: calc(50% - 5%);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #000000;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #000000;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid #000000;
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid #000000;
+}
+.login input[type=button]:focus{
+	outline: none;
+}
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+	.tt:hover{background-color:#353535;}
+  </style>
+  <body>
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="currentteam.html" style="color:#000000;">Current</a></li>
+  <li class="divider"></li>
+  <li><a href="alumniteam.html" style="color:#000000;">Alumni</a></li>
+</ul>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="currentteam.html" style="color:#000000;">Current</a></li>
+  <li class="divider"></li>
+  <li><a href="alumniteam.html" style="color:#000000;">Alumni</a></li>
+</ul>
+<nav class = "black">
+  <div class="nav-wrapper">
+    <a href="https://www.facebook.com/bitspilanirobocon/?fref=ts&ref=br_tf" class="brand-logo" style="padding-left: 5%;"><img src="Images/Robocon_Logo.png"></a>
+	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html" class="tt">Home</a></li>
+      <li><a href="http://www.roboconindia.com/" class="tt">ABU Robocon</a></li>
+      <li><a href="register.html" class="tt">Sign Up</a></li>
+      <li><a href="login.html" class="tt">Login</a></li>
+      <li><a class="dropdown-button tt" href="#!" data-activates="dropdown1">Team</a></li>
+      <li><a class="modal-trigger tt" href="#sponsors" style="color:#fff;">Sponsors</a></li>
+    </ul>
+	 <ul class="side-nav collapsible" id="mobile-demo" data-collapsible="accordion">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="http://www.roboconindia.com/">ABU Robocon</a></li>
+      <li><a href="register.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Team</a></li>
+
+      <li><a class="modal-trigger" href="#sponsors" style="color:#000000;">Sponsors</a></li>
+      </ul>
+  </div>
+</nav>
+ 
+<div id="container">
+<div>
+<div class="header1">
+			<div>TEAM<span>ROBOCON</span>LOGIN</div>
+		</div>
+		<br>
+		<div class="login">
+				<input type="text" placeholder="username" name="user"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<input type="button" value="Login">
+		</div>
+</div>
+<div style="position:absolute; width:100%; bottom:0;">
+<footer class="page-footer black">  
+          <div class="footer-copyright">
+            <div class="container">
+            <span style="color:#FFFFFF;">© 2016 Team Roboocon Bits Pilani</span>
+            <span class="white-text right">Developers: <a href="https://www.facebook.com/profile.php?id=100007142927829" style="color:#fff;"><u>Prakhar Agarwal</u></a> and <a href="https://www.facebook.com/rishabhmittar?fref=ts" style="color:#FFFFFF;"><u>Rishabh Mittar</u></a></span>
+			</div>
+          </div>
+        </footer>
+		</div>  
+		
+ <div id="sponsors" class="modal" style="border:thick inset #fff; background-color:#eeeeee;">
+    <div class="modal-content">
+      <h2 align="center" style="font-family:'AR BERKLEY';"><u>Sponsors</u></h2>
+      <p style="font-size:20px; letter-spacing:1px; line-height:40px;">
+	  <div class="to">
+	  <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Mentoring Sponsor"><img src="Images/ASME.png" class="responsive-img"></a>
+	  <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Hosting Sponsor"><img src="Images/liquidserve_logo.png" class="responsive-img"></a>
+</p></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+</script>
+<script>
+  $( document ).ready(function){
+$(".dropdown-button").dropdown();}
+</script>
+<script>
+ $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });	  $('.slider').slider({height: 600});
+
+</script>
+<script>
+$(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+</script>
+   </body>
+</html>

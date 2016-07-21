@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>Robocon Bits Pilani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    .to > a >img{margin:3%;}
+    .to > img{margin:5%;}
+  p{color:#000000;}
+  a{color:#1976d2 ;}
+   body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  background-color:#eeeeee;
+  }
+  #main {
+    flex: 1 0 auto;
+  }
+	.gallery{margin-left:9%;
+	}
+	.gallery > div{float:left;
+	margin: 30px;}
+	div > img{box-shadow: 10px 10px 5px #888888;}
+		.tt:hover{background-color:#353535;}
+  </style>
+  </head>
+  <body>
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="currentteam.html" style="color:#000000;">Current</a></li>
+  <li class="divider"></li>
+  <li><a href="alumniteam.html" style="color:#000000;">Alumni</a></li>
+</ul>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="currentteam.html" style="color:#000000;">Current</a></li>
+  <li class="divider"></li>
+  <li><a href="alumniteam.html" style="color:#000000;">Alumni</a></li>
+</ul>
+<nav class = "black">
+  <div class="nav-wrapper">
+    <a href="https://www.facebook.com/bitspilanirobocon/?fref=ts&ref=br_tf" class="brand-logo" style="padding-left: 5%;"><img src="Images/Robocon_Logo.png"></a>
+	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html" class="tt">Home</a></li>
+      <li><a href="http://www.roboconindia.com/" class="tt">ABU Robocon</a></li>
+      <li><a href="register.html" class="tt">Sign Up</a></li>
+      <li><a href="login.html" class="tt">Login</a></li>
+      <li><a class="dropdown-button tt" href="#!" data-activates="dropdown1">Team</a></li>
+      <li><a class="modal-trigger tt" href="#sponsors" style="color:#fff;">Sponsors</a></li>
+	  <li><a href="#" class="tt">Logout</a></li>
+    </ul>
+	 <ul class="side-nav collapsible" id="mobile-demo" data-collapsible="accordion">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="http://www.roboconindia.com/">ABU Robocon</a></li>
+      <li><a href="register.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Team</a></li>
+
+      <li><a class="modal-trigger" href="#sponsors" style="color:#000000;">Sponsors</a></li>
+      <li><a href="#" class="tt">Logout</a></li>
+	  </ul>
+  </div>
+</nav>
+ <div id="container">
+   <div class=" fade-in one"><br><br>
+       <h3 align = "center" style="color:#000000; font-family: 'Droid Serif', serif;">Welcome to Robocon - Bits Pilani</h3></div>
+<div class =" fade-in two" align="center" style="margin-right:10%; margin-left:10%;"><br>
+<p style="font-size:18px;">
+Dear <span style="font-weight:bold;" id="id_name"> User name </span>, Robocon - Bits Pilani welcomes you to our robotic world. Here you will find links to our newsletters as well as all the updates regarding our workshop registration process as well as some updates rgarding the work our team does. <br>For more details click on the images below <br>
+ <div class="to">
+	  <img src="Images/workshop.png" class="responsive-img">
+	  <img src="Images/newsletter.png" class="responsive-img">
+</div></p></div><br>
+        <footer class = "page-footer black">  
+          <div class="footer-copyright">
+            <div class="container">
+            <span style="color:#FFFFFF;">© 2016 Team Roboocon Bits Pilani</span>
+            <span class="white-text right">Developers: <a href="https://www.facebook.com/profile.php?id=100007142927829" style="color:#fff;"><u>Prakhar Agarwal</u></a> and <a href="https://www.facebook.com/rishabhmittar?fref=ts" style="color:#FFFFFF;"><u>Rishabh Mittar</u></a></span>
+			</div>
+          </div>
+        </footer>   
+		</div>     
+  <div id="sponsors" class="modal" style="border:thick inset #fff; background-color:#eeeeee;">
+    <div class="modal-content">
+      <h2 align="center" style="font-family:'AR BERKLEY';"><u>Sponsors</u></h2>
+      <p style="font-size:20px; letter-spacing:1px; line-height:40px;">
+	  <div class="to">
+	  <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Mentoring Sponsor"><img src="Images/ASME.png" class="responsive-img"></a>
+	  <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Hosting Sponsor"><img src="Images/liquidserve_logo.png" class="responsive-img"></a>
+</p></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+</script>
+<script>
+  $( document ).ready(function){
+$(".dropdown-button").dropdown();}
+</script>
+<script>
+ $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });	  $('.slider').slider({height: 600});
+
+</script>
+<script>
+$(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+</script>
+
+   </body>
+</html>
+
